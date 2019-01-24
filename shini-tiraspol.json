@@ -1,0 +1,26 @@
+{
+  "легковые": {
+    "летние": "http://shini-tiraspol.ru/catalog/letnie-shiny?page=all",
+    "зимние": "http://shini-tiraspol.ru/catalog/zimnie-shiny?page=all",
+    "всесезонные": "http://shini-tiraspol.ru/catalog/vsesezonnye-shiny?page=all"
+  },
+  "джипы 4x4": {
+    "летние": "http://shini-tiraspol.ru/catalog/letnie-shiny-4x4?page=all",
+    "зимние": "http://shini-tiraspol.ru/catalog/zimnie-shiny-4x4?page=all",
+    "всесезонные": "http://shini-tiraspol.ru/catalog/vsesezonnye-shin-4x4?page=all"
+  },
+  "легкогрузовые": {
+    "летние": "http://shini-tiraspol.ru/catalog/letnie-shiny-lg?page=all",
+    "зимние": "http://shini-tiraspol.ru/catalog/zimnie-shiny-lg?page=all",
+    "всесезонные": "http://shini-tiraspol.ru/catalog/vsesezonnye-shiny-lg?page=all"
+  },
+  "грузовые": {
+    "-": "http://shini-tiraspol.ru/catalog/gruzovye-avto?page=all"
+  },
+  "спецтехника": {
+    "-": "http://shini-tiraspol.ru/catalog/spetstehnika?page=all"
+  },
+  "сельхозтехника": {
+    "-": "http://shini-tiraspol.ru/catalog/selhoztehnika?page=all"
+  }
+}
