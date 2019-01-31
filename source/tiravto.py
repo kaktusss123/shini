@@ -7,7 +7,7 @@ from pprint import pprint
 seasons = ['летняя', 'зимняя']
 
 
-def test():
+def parse():
     res = []
     for i in range(1, 15):
         page = html.fromstring(get('https://tiravto.com/catalogs/tires?page={}'.format(i)).text)
@@ -42,8 +42,8 @@ def write(res):
     for row in rows:
         ws.append(row)
 
-    wb.save('./res/tiravto.xlsx')
+    wb.save('../res/tiravto.xlsx')
 
 
 if __name__ == '__main__':
-    write(test())
+    write(parse())

@@ -1,0 +1,10 @@
+{
+  "грузовые": {
+    "pages": 114,
+    "url": "https://rezina.cc/gruzovye-shiny?page={}&view=partial"
+  },
+  "легковые": {
+    "pages": 859,
+    "url": "https://rezina.cc/shiny?page={}&view=partial"
+  }
+}

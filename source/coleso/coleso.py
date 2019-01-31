@@ -8,7 +8,7 @@ seasons = {'image/stk/all.png': 'всесезонные', 'image/stk/s1.png': '�
 
 def parse():
     res = []
-    with open('coleso.md.json') as f:
+    with open('coleso.json') as f:
         data = load(f)
     for data_cls in data.items():
         cls = data_cls[0]
@@ -41,7 +41,7 @@ def write(rows):
     for row in rows:
         ws.append(row)
 
-    wb.save('../res/coleso.xlsx')
+    wb.save('../../res/coleso.xlsx')
 
 
 if __name__ == '__main__':

@@ -44,7 +44,7 @@ def write(rows):
     for row in rows:
         ws.append(row)
 
-    wb.save('../res/agropiese.xlsx')
+    wb.save('../../res/agropiese.xlsx')
 
 
 if __name__ == '__main__':
