@@ -1,0 +1,7 @@
+{
+  "Легковые": "https://master-lux.md/ru/search?search-for=car-tyres&width=&height=&radius=&speed-index=&brand=",
+  "Внедорожники": "https://master-lux.md/ru/search?search-for=suv-tyres&width=&height=&radius=&speed-index=&brand=",
+  "Грузовые": "https://master-lux.md/ru/search?search-for=cargo-tyres&width=&height=&radius=&speed-index=&brand=",
+  "Легкогрузовые": "https://master-lux.md/ru/search?search-for=truck-tyres&width=&height=&radius=&speed-index=&brand=",
+  "С/Х": "https://master-lux.md/ru/search?search-for=agro-tyres&width=&height=&radius=&speed-index=&brand="
+}
