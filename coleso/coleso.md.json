@@ -1,0 +1,18 @@
+{
+  "легковые": {
+    "url": "http://coleso.md/anvelope_auto/autoturism/?page=",
+    "pages": 50
+  },
+  "грузовые": {
+    "url": "http://coleso.md/anvelope_auto/camioane/?page=",
+    "pages": 19
+  },
+  "легкогрузовые": {
+    "url": "http://coleso.md/anvelope_auto/camionete/?page=",
+    "pages": 10
+  },
+  "с/х": {
+    "url": "http://coleso.md/anvelope_auto/tehnica/?page=",
+    "pages": 9
+  }
+}
