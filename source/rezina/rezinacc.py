@@ -7,14 +7,15 @@ from requests import get
 
 def parse():
     res = []
-    with open('rezina.json') as f:
+    with open('./source/rezina/rezina.json') as f:
         data = load(f)
 
     for cls in data:
+        print(cls)
         for i in range(1, data[cls]['pages']):
             page = html.fromstring(get(data[cls]['url'].format(i)).text)
             items = page.xpath('//li[@class="tile-item"]')
-            print('Page: {}'.format(i))
+            print('Page: {}/{}'.format(i, data[cls]['pages']))
 
             for item in items:
                 try:
@@ -44,7 +45,7 @@ def write(res):
     for row in res:
         ws.append(row)
 
-    wb.save('../../res/rezina.cc.xlsx')
+    wb.save('./res/rezina.cc.xlsx')
 
 
 if __name__ == '__main__':

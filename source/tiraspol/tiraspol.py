@@ -7,9 +7,10 @@ from requests import get
 
 def parse():
     res = []
-    with open('tiraspol.json') as f:
+    with open('./source/tiraspol/tiraspol.json') as f:
         data = load(f)
     for cls in data:
+        print(cls)
         for season in data[cls]:
             page = html.fromstring(get(data[cls][season]).text)
             cells = page.xpath('//div[@class="one_section_product_cells"]')
@@ -20,7 +21,6 @@ def parse():
                 price = cell.xpath('.//div[@class="new_price"]/text()')[1]
                 res.append([name, cls, brand, size, season, price])
             print(season, 'completed')
-        print(cls, 'completed\n')
     return res
 
 

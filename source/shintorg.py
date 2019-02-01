@@ -8,6 +8,7 @@ BASE_URL = 'http://shintorg.md/catalog/shiny?page='
 def parse():
     res = []
     for i in range(1, 9):
+        print('Страница {}/{}'.format(i, 9))
         page = html.fromstring(get(BASE_URL + str(i)).text)
         items = page.xpath('//div[@class="pc-item product"]')
         for item in items:
@@ -32,7 +33,7 @@ def write(rows):
     for row in rows:
         ws.append(row)
 
-    wb.save('../res/shintorg.xlsx')
+    wb.save('./res/shintorg.xlsx')
 
 
 if __name__ == '__main__':

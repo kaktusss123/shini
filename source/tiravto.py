@@ -10,6 +10,7 @@ seasons = ['летняя', 'зимняя']
 def parse():
     res = []
     for i in range(1, 15):
+        print('Страница {}/{}'.format(i, 15))
         page = html.fromstring(get('https://tiravto.com/catalogs/tires?page={}'.format(i)).text)
         cells = page.xpath('//div[@class="catalogItem"]')
         for cell in cells:
@@ -42,7 +43,7 @@ def write(res):
     for row in rows:
         ws.append(row)
 
-    wb.save('../res/tiravto.xlsx')
+    wb.save('./res/tiravto.xlsx')
 
 
 if __name__ == '__main__':

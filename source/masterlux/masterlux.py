@@ -6,10 +6,11 @@ from requests import get
 
 def parse():
     res = []
-    with open('masterlux.json') as f:
+    with open('./source/masterlux/masterlux.json') as f:
         data = load(f)
     for pair in data.items():
         cls = pair[0]
+        print('cls')
         page = html.fromstring(get(pair[1]).text)
         items = page.xpath('//div[@class="product-form"]')
         prices = page.xpath('//button[@title="В корзину"]/text()')
@@ -33,7 +34,7 @@ def write(rows):
     for row in rows:
         ws.append(row)
 
-    wb.save('../../res/masterlux.xlsx')
+    wb.save('./res/masterlux.xlsx')
 
 
 if __name__ == '__main__':
