@@ -29,7 +29,7 @@ def write(res):
     ws = wb.create_sheet('Шины', 0)
     ws.append(['Наименование', 'Класс', 'Бренд', 'Размер', 'Сезонность', 'Цена'])
     for row in res:
-        ws.append(row)
+        ws.append([str(x) for x in row])
     wb.save('./res/shini-tiraspol.xlsx')
 
 

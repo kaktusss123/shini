@@ -1,4 +1,4 @@
-from source import tiravto, shintorg
+from source import tiravto, shintorg, avtolyalya
 from source.agropiese import agropiese
 from source.coleso import coleso
 from source.masterlux import masterlux
@@ -20,4 +20,6 @@ if __name__ == '__main__':
     coleso.write(coleso.parse())
     print('----------------------------AGROPIESE---------------------------')
     agropiese.write(agropiese.parse())
+    print('-----------------------------AVTOLYALYA-------------------------')
+    avtolyalya.write(avtolyalya.parse())
     print('------------------------------Done!-----------------------------')

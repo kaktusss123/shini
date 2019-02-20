@@ -30,7 +30,7 @@ def parse():
 
             price = cell.xpath('.//h4/text()')[0].strip()
             presense = cell.xpath('.//div[@class="catalogButton"]/b/text()')[0]
-            res.append([name, brand, size, season, price, presense])
+            res.append([str(name), brand, size, season, price, str(presense)])
     return res
 
 
@@ -41,7 +41,7 @@ def write(res):
     rows = [['Наименование', 'Бренд', 'Размер', 'Сезонность', 'Цена', 'Наличие']]
     rows += res
     for row in rows:
-        ws.append(row)
+        ws.append([str(x) for x in row])
 
     wb.save('./res/tiravto.xlsx')
 

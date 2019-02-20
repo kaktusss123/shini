@@ -38,7 +38,7 @@ def write(rows):
     ws = wb.create_sheet('Шины', 0)
     ws.append(['Наименование', 'Класс', 'Сезонность', 'Цена'])
     for row in rows:
-        ws.append(row)
+        ws.append([str(x) for x in row])
 
     wb.save('./res/coleso.xlsx')
 
