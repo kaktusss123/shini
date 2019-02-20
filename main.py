@@ -4,6 +4,7 @@ from source.coleso import coleso
 from source.masterlux import masterlux
 from source.rezina import rezinacc
 from source.tiraspol import tiraspol
+from source.shiniod import shiniod
 
 if __name__ == '__main__':
     print('-----------------------------TIRAVTO----------------------------')
@@ -22,4 +23,6 @@ if __name__ == '__main__':
     agropiese.write(agropiese.parse())
     print('-----------------------------AVTOLYALYA-------------------------')
     avtolyalya.write(avtolyalya.parse())
+    print('------------------------------SHINI.OD--------------------------')
+    shiniod.write(shiniod.parse())
     print('------------------------------Done!-----------------------------')

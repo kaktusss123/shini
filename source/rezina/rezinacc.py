@@ -7,7 +7,7 @@ from requests import get
 
 def parse():
     res = []
-    with open('./source/rezina/rezina.json') as f:
+    with open('./source/rezina/rezina.json', encoding='UTF-8') as f:
         data = load(f)
 
     for cls in data:

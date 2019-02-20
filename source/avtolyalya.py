@@ -20,7 +20,7 @@ def write(rows):
     ws = wb.create_sheet('Шины', 0)
     ws.append(['Наименование', 'Цена'])
     for row in rows:
-        ws.append([str(x) for x in row])
+        ws.append(row)
 
     wb.save('./res/avtolyalya.xlsx')
 

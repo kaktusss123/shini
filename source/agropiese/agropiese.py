@@ -8,7 +8,7 @@ REQ_URL = 'http://agropiese.md/s_c/s_c.aspx?md=1&d='
 
 def parse():
     res = []
-    with open('./source/agropiese/agropiese.json') as f:
+    with open('./source/agropiese/agropiese.json', encoding='UTF-8') as f:
         data = load(f)
     for pair in data.items():
         print(pair[0])
@@ -42,7 +42,7 @@ def write(rows):
     ws = wb.create_sheet('Шины', 0)
     ws.append(['Наименование', 'Класс', 'Бренд', 'Сезонность', 'Цена'])
     for row in rows:
-        ws.append([str(x) for x in row])
+        ws.append(row)
 
     wb.save('./res/agropiese.xlsx')
 

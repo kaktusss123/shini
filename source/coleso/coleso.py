@@ -8,7 +8,7 @@ seasons = {'image/stk/all.png': 'всесезонные', 'image/stk/s1.png': '�
 
 def parse():
     res = []
-    with open('./source/coleso/coleso.json') as f:
+    with open('./source/coleso/coleso.json', encoding='UTF-8') as f:
         data = load(f)
     for data_cls in data.items():
         cls = data_cls[0]
@@ -38,7 +38,7 @@ def write(rows):
     ws = wb.create_sheet('Шины', 0)
     ws.append(['Наименование', 'Класс', 'Сезонность', 'Цена'])
     for row in rows:
-        ws.append([str(x) for x in row])
+        ws.append(row)
 
     wb.save('./res/coleso.xlsx')
 

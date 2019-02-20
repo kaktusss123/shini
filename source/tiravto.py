@@ -41,7 +41,7 @@ def write(res):
     rows = [['Наименование', 'Бренд', 'Размер', 'Сезонность', 'Цена', 'Наличие']]
     rows += res
     for row in rows:
-        ws.append([str(x) for x in row])
+        ws.append(row)
 
     wb.save('./res/tiravto.xlsx')
 
